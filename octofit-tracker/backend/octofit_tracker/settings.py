@@ -27,6 +27,7 @@ DEBUG = True
 
 # Allow all hosts
 ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS += ['turbo-disco-4gpxvgp7j4p2jq59.github.dev-8000.app.github.dev', 'localhost']
 
 # Application definition 
 
