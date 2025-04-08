@@ -26,7 +26,7 @@ class WorkoutViewSet(viewsets.ModelViewSet):
 
 @api_view(['GET'])
 def api_root(request, format=None):
-    base_url = 'https://turbo-disco-4gpxvgp7j4p2jq59.github.dev-8000.app.github.dev/'
+    base_url = 'https://turbo-disco-4gpxvgp7j4p2jq59-8000.app.github.dev/'
     return Response({
         'users': base_url + 'api/users/',
         'teams': base_url + 'api/teams/',
