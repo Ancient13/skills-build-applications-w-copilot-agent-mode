@@ -13,11 +13,22 @@ function Workouts() {
   return (
     <div>
       <h1>Workouts</h1>
-      <ul>
-        {workouts.map(workout => (
-          <li key={workout.id}>{workout.name} - {workout.description}</li>
-        ))}
-      </ul>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Workout Name</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          {workouts.map(workout => (
+            <tr key={workout.id}>
+              <td>{workout.name}</td>
+              <td>{workout.description}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

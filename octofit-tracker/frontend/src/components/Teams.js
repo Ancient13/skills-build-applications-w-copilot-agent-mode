@@ -13,11 +13,20 @@ function Teams() {
   return (
     <div>
       <h1>Teams</h1>
-      <ul>
-        {teams.map(team => (
-          <li key={team.id}>{team.name}</li>
-        ))}
-      </ul>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Team Name</th>
+          </tr>
+        </thead>
+        <tbody>
+          {teams.map(team => (
+            <tr key={team.id}>
+              <td>{team.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }

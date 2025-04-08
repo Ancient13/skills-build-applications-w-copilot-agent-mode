@@ -13,11 +13,22 @@ function Activities() {
   return (
     <div>
       <h1>Activities</h1>
-      <ul>
-        {activities.map(activity => (
-          <li key={activity.id}>{activity.activity_type} - {activity.duration} minutes</li>
-        ))}
-      </ul>
+      <table className="table table-striped">
+        <thead>
+          <tr>
+            <th>Activity Type</th>
+            <th>Duration (minutes)</th>
+          </tr>
+        </thead>
+        <tbody>
+          {activities.map(activity => (
+            <tr key={activity.id}>
+              <td>{activity.activity_type}</td>
+              <td>{activity.duration}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </div>
   );
 }
