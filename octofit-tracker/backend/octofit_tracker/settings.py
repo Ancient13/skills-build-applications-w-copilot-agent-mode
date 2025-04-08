@@ -27,7 +27,7 @@ DEBUG = True
 
 # Allow all hosts
 ALLOWED_HOSTS = ['*']
-
+#test   
 
 # Application definition
 
